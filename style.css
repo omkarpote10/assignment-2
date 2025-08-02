@@ -27,11 +27,6 @@ li {
     margin-top: 5px;
 }
 
-li>a{
-    text-decoration:none;
-}
-
-
 img {
     height: 25px;
     width: 102px;
@@ -99,5 +94,6 @@ p {
     margin-top: 20px;
     width: 230px;
 }
+
 
 
