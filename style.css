@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Added for better box model handling */
 }
 
 body {
@@ -10,25 +11,21 @@ body {
 }
 
 ul {
-    /* background-color: black; */
     color: rgba(0, 0, 0, 0.266);
     padding: 25px;
     font-size: 25px;
     font-weight: 400;
     text-align: center;
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* overflow: auto; */
     flex-wrap: wrap;
 }
 
 li {
     list-style: none;
     margin-top: 5px;
-
 }
-
 
 li:hover {
     color: blueviolet;
@@ -38,7 +35,7 @@ li:hover {
 img {
     height: 25px;
     width: 102px;
-    display: inline;
+    display: inline-block; /* Changed from inline to inline-block */
     margin-top: 8px;
 }
 
@@ -50,8 +47,8 @@ button {
     color: rgba(0, 0, 0, 0.644);
     padding: 10px;
     border-radius: 5px;
-    border: rgb(0, 170, 255);
-    display: inline;
+    border: 1px solid rgb(0, 170, 255); /* Corrected border */
+    display: inline-block; /* Changed from inline to inline-block */
     margin-bottom: 5px;
     width: 150px;
 }
@@ -65,16 +62,11 @@ section {
     flex-wrap: wrap;
 }
 
-.hero {
-    width: 224px;
-    margin-left: 135px;
-    margin-top: 42px;
-}
-
+.hero,
 .hero1 {
-    margin-top: 42px;
     width: 224px;
     margin-left: 135px;
+    margin-top: 42px;
 }
 
 h1 {
@@ -84,22 +76,19 @@ h1 {
 }
 
 .ls {
-    /* margin-top: 2px; */
     color: rgb(20, 169, 210);
 }
 
-span>img {
+span > img {
     height: 250px;
     width: 500px;
     margin-left: 300px;
-    /* border: 5px solid white; */
     border-radius: 5px;
     opacity: 0.6;
 }
 
 p {
     width: 385px;
-    /* margin-left: 105px; */
     margin-top: 5px;
     gap: 1px;
     color: rgba(0, 0, 0, 0.419);
@@ -109,5 +98,4 @@ p {
     background-color: rgba(20, 91, 197, 0.493);
     margin-top: 20px;
     width: 230px;
-    /* margin-left: 105px; */
 }
