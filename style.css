@@ -27,10 +27,6 @@ li {
     margin-top: 5px;
 }
 
-li:hover {
-    color: blueviolet;
-    text-decoration: underline;
-}
 
 img {
     height: 25px;
@@ -99,3 +95,4 @@ p {
     margin-top: 20px;
     width: 230px;
 }
+
